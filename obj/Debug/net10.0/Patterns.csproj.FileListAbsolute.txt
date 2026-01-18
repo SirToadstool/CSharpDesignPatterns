@@ -1,0 +1,14 @@
+/home/mike/Code/DOTNET/Patterns/bin/Debug/net10.0/Patterns
+/home/mike/Code/DOTNET/Patterns/bin/Debug/net10.0/Patterns.deps.json
+/home/mike/Code/DOTNET/Patterns/bin/Debug/net10.0/Patterns.runtimeconfig.json
+/home/mike/Code/DOTNET/Patterns/bin/Debug/net10.0/Patterns.dll
+/home/mike/Code/DOTNET/Patterns/bin/Debug/net10.0/Patterns.pdb
+/home/mike/Code/DOTNET/Patterns/obj/Debug/net10.0/Patterns.GeneratedMSBuildEditorConfig.editorconfig
+/home/mike/Code/DOTNET/Patterns/obj/Debug/net10.0/Patterns.AssemblyInfoInputs.cache
+/home/mike/Code/DOTNET/Patterns/obj/Debug/net10.0/Patterns.AssemblyInfo.cs
+/home/mike/Code/DOTNET/Patterns/obj/Debug/net10.0/Patterns.csproj.CoreCompileInputs.cache
+/home/mike/Code/DOTNET/Patterns/obj/Debug/net10.0/Patterns.dll
+/home/mike/Code/DOTNET/Patterns/obj/Debug/net10.0/refint/Patterns.dll
+/home/mike/Code/DOTNET/Patterns/obj/Debug/net10.0/Patterns.pdb
+/home/mike/Code/DOTNET/Patterns/obj/Debug/net10.0/Patterns.genruntimeconfig.cache
+/home/mike/Code/DOTNET/Patterns/obj/Debug/net10.0/ref/Patterns.dll
