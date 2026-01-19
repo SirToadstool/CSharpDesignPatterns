@@ -6,10 +6,38 @@ public abstract class SupportHandler
 
     public void SetNext(SupportHandler handler)
     {
+        if (handler == this)
+        {
+            throw new ArgumentException("Handler cannot reference itself");
+        }
+
+        if (WouldCreateCycle(handler))
+        {
+            throw new InvalidOperationException("Setting this handler would create a cycle");
+        }
+
         _nextHandler = handler;
     }
 
     public abstract void HandleRequest(string issue, int priority);
+
+    private bool WouldCreateCycle(SupportHandler newHandler)
+    {
+        SupportHandler? current = newHandler;
+        HashSet<SupportHandler> visited = [];
+
+        while (current != null)
+        {
+            if (current == this || !visited.Add(current))
+            {
+                return true;
+            }
+
+            current = current._nextHandler;
+        }
+
+        return false;
+    }
 }
 
 public class ChatBot : SupportHandler
