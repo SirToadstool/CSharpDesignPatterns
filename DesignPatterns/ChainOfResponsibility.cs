@@ -3,6 +3,7 @@ namespace Patterns.DesignPatterns;
 public abstract class SupportHandler
 {
     protected SupportHandler? _nextHandler;
+    public abstract string? Name { get; set; }
 
     public void SetNext(SupportHandler handler)
     {
@@ -42,6 +43,8 @@ public abstract class SupportHandler
 
 public class ChatBot : SupportHandler
 {
+    public override string? Name { get; set; } = "Chat Bot";
+    
     public override void HandleRequest(string issue, int priority)
     {
         if (priority == 1)
@@ -57,6 +60,8 @@ public class ChatBot : SupportHandler
 
 public class JuniorAgent : SupportHandler
 {
+    public override string? Name { get; set; } = "Junior Agent";
+
     public override void HandleRequest(string issue, int priority)
     {
         if (priority == 2)
@@ -72,6 +77,8 @@ public class JuniorAgent : SupportHandler
 
 public class Manager : SupportHandler
 {
+    public override string? Name { get; set; } = "Manager";
+
     public override void HandleRequest(string issue, int priority)
     {
         Console.WriteLine($"{nameof(Manager)}: Handling {issue}");

@@ -11,7 +11,7 @@ public static class Functions
         Manager manager = new();
 
         chatBot.SetNext(juniorAgent);
-        juniorAgent.SetNext(manager);
+        juniorAgent.SetNext(chatBot);
 
         chatBot.HandleRequest("issue1", 1);
         chatBot.HandleRequest("issue2", 2);
