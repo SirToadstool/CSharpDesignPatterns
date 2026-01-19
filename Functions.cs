@@ -48,6 +48,17 @@ public static class Functions
         station.Temperature = 50.9f;
     }
 
+    public static void CreateSingleton()
+    {
+        Singleton singleton1 = Singleton.Create();
+        Singleton singleton2 = Singleton.Create();
+
+        singleton2.Number = 2;
+
+        Console.WriteLine($"Singleton1 number: {singleton1.Number}");
+        Console.WriteLine($"Singleton2 number: {singleton2.Number}");
+    }
+
     public static void CreateStrategy()
     {
         Converter converter = new(new JsonConverter());
