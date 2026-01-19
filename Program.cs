@@ -14,6 +14,10 @@ public class Program
         Functions.CreateChainOfResponsibility();
         Console.WriteLine();
         
+        Console.WriteLine("Creating Command...");
+        Functions.CreateCommand();
+        Console.WriteLine();
+
         Console.WriteLine("Creating Factory...");
         Functions.CreateFactory();
         Console.WriteLine();

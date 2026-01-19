@@ -47,6 +47,21 @@ public static class Functions
         chatBot.HandleRequest("issue3", 3);
     }
 
+    public static void CreateCommand()
+    {
+        Light bedroomLight = new(LightType.Basement);
+        Light kitchenLight = new(LightType.Kitchen);
+
+        RemoteControl remote = new();
+
+        remote.ExecuteCommand(new LightOnCommand(bedroomLight));
+        remote.ExecuteCommand(new LightOnCommand(kitchenLight));
+        remote.ExecuteCommand(new LightOffCommand(bedroomLight));
+
+        remote.UndoLastCommand();
+        remote.UndoLastCommand();
+    }
+
     public static void CreateFactory()
     {
         AnimalFactory factory = new();
