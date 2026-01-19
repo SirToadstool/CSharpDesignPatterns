@@ -1,4 +1,6 @@
-namespace Patterns;
+using Patterns.DesignPatterns;
+
+namespace Patterns.Utility;
 
 public static class Functions
 {

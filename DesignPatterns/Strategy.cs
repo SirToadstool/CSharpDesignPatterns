@@ -1,6 +1,4 @@
-using System.Runtime.InteropServices.Marshalling;
-
-namespace Patterns;
+namespace Patterns.DesignPatterns;
 
 public interface IStrategy
 {

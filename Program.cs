@@ -1,4 +1,6 @@
-﻿namespace Patterns;
+﻿using Patterns.Utility;
+
+namespace Patterns;
 
 public class Program
 {

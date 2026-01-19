@@ -1,4 +1,4 @@
-namespace Patterns;
+namespace Patterns.DesignPatterns;
 
 public abstract class SupportHandler
 {
