@@ -6,6 +6,7 @@ public class Program
 {
     public static void Main()
     {
+        Functions.CreateBuilder();
         Functions.CreateChainOfResponsibility();
         Functions.CreateFactory();
         Functions.CreateObserver();

@@ -4,6 +4,35 @@ namespace Patterns.Utility;
 
 public static class Functions
 {
+    public static void CreateBuilder()
+    {
+        Pizza simplePizza = new Pizza.PizzaBuilder("large")
+            .AddCheese()
+            .Build();
+
+        Console.WriteLine(simplePizza);
+
+        Pizza supremePizza = new Pizza.PizzaBuilder("large")
+            .AddCheese()
+            .AddPepperoni()
+            .AddSausage()
+            .AddMushrooms()
+            .AddOlives()
+            .WithCrust("thin")
+            .Build();
+
+        Console.WriteLine(supremePizza);
+
+        Pizza vegetarianPizza = new Pizza.PizzaBuilder("medium")
+            .AddCheese()
+            .AddMushrooms()
+            .AddOlives()
+            .WithCrust("whole wheat")
+            .Build();
+
+        Console.WriteLine(vegetarianPizza);
+    }
+
     public static void CreateChainOfResponsibility()
     {
         ChatBot chatBot = new();
@@ -11,7 +40,7 @@ public static class Functions
         Manager manager = new();
 
         chatBot.SetNext(juniorAgent);
-        juniorAgent.SetNext(chatBot);
+        juniorAgent.SetNext(manager);
 
         chatBot.HandleRequest("issue1", 1);
         chatBot.HandleRequest("issue2", 2);
