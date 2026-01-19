@@ -19,7 +19,6 @@ public class Light(LightType type)
 {
     private LightType _type = type;
     
-    public void SetType(LightType type) => _type = type;
     public void TurnOn() => Console.WriteLine($"{_type} light is ON");
     public void TurnOff() => Console.WriteLine($"{_type} light is OFF");
 }
